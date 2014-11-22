@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Navigation">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <bookProperties
+            jcr:primaryType="cq:Widget"
+            id="synthetic-models-properties-opts"
+            title="Book Properties"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <isbn
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Hide in navigation"
+                    name="./isbn"
+                    xtype="textfield"/>
+            </items>
+        </bookProperties>
+    </items>
+</jcr:root>

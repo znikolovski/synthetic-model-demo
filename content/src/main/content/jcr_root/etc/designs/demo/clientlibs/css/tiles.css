@@ -1,0 +1,72 @@
+/* Default tags and Bootstrap classes */
+ 
+body {
+	font-family: 'PT Sans Caption', sans-serif;
+	color: #000099;
+	padding: 40px 0;
+}
+ 
+.lead { padding: 40px 0; }
+ 
+ 
+ 
+/* Grid */
+ 
+#posts { margin: 30px auto 0; }
+.post {
+	margin: 0 0 50px;
+	text-align: center;
+	width: 100%;
+}
+.post img { padding: 0 15px; width: 100%; }
+ 
+#grid.container .post img { padding: 0; }
+ 
+ 
+/* Medium devices */
+ 
+@media (min-width: 768px) {
+	#grid > #posts .post { width: 335px; }
+	#grid > #posts .post.cs2 { width: 100%; }
+	.post img { padding: 0; }
+}
+ 
+ 
+ 
+/* Medium devices */
+ 
+@media (min-width: 992px) {
+	#grid > #posts .post { width: 445px; }
+	#grid > #posts .post.cs2 { width: 100%; }
+}
+ 
+ 
+ 
+/* Large devices */
+ 
+@media (min-width: 1200px) {
+	#grid > #posts .post { width: 346px; }
+	#grid > #posts .post.cs2 { width: 742px; }
+}
+ 
+ 
+ 
+/* Large devices min-width (1200px) + a .post margin (50px) * 2 (100px) = 1300px */
+/* 1300px gives me the clearance I need to keep the margins of the entire #grid (the
+bleed if you will) the same width as the .post margins posts (50px). Basically I'm
+being really picky about whitespace. If you don't care, no problem, just delete this.
+Can this be done with Masonry options? */
+ 
+@media (min-width: 1300px) {
+	#grid {
+		left: -50px;
+		padding-left: 50px;
+		padding-right: 50px;
+		position: relative;
+    	}
+	#grid.container {
+		left: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
